@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/milad/Data-Science/mslearn-mlops/src/model/mlruns/0/f506432381eb447da8a873b8a84d261b/artifacts
+end_time: 1741185596643
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f506432381eb447da8a873b8a84d261b
+run_name: masked-stork-633
+run_uuid: f506432381eb447da8a873b8a84d261b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741185594011
+status: 3
+tags: []
+user_id: milad

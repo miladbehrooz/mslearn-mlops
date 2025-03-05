@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/milad/Data-Science/mslearn-mlops/src/model/mlruns/0/93053bd21dfb429b9d0ba32cc09791a7/artifacts
+end_time: 1741183533027
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 93053bd21dfb429b9d0ba32cc09791a7
+run_name: rebellious-stork-600
+run_uuid: 93053bd21dfb429b9d0ba32cc09791a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741183530326
+status: 3
+tags: []
+user_id: milad

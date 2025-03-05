@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/milad/Data-Science/mslearn-mlops/src/model/mlruns/0/fbb5ee0acffd4163a7c07b05b25b576c/artifacts
+end_time: 1741177966184
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: fbb5ee0acffd4163a7c07b05b25b576c
+run_uuid: fbb5ee0acffd4163a7c07b05b25b576c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741177965055
+status: 4
+tags: []
+user_id: milad
