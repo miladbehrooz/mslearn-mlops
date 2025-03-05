@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/c296a100aca94b52b453fac9aafccd80/artifacts
+end_time: 1741183594929
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c296a100aca94b52b453fac9aafccd80
+run_name: abrasive-turtle-338
+run_uuid: c296a100aca94b52b453fac9aafccd80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741183592359
+status: 3
+tags: []
+user_id: milad

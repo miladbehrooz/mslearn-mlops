@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/0358def482a640a592c013e1ec3b4985/artifacts
+end_time: 1741178751888
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 0358def482a640a592c013e1ec3b4985
+run_uuid: 0358def482a640a592c013e1ec3b4985
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741178749921
+status: 4
+tags: []
+user_id: milad
