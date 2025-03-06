@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 def main(args):
     # TO DO: enable autologging
 
-    mlflow.set_tracking_uri("http://127.0.0.1:5000")
+    # mlflow.set_tracking_uri("http://127.0.0.1:5000")
 
     mlflow.autolog()
     # read data
