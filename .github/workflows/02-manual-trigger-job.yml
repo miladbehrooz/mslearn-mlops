@@ -22,6 +22,6 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          az group show --name "mlops-course"
+          az group show --name "mlops-course" 
           az ml job create --file src/job.yml --resource-group mlops-course --workspace-name aml-workspace
               
