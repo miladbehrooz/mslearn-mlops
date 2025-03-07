@@ -1,0 +1,17 @@
+name: Automatically trigger a job
+
+on:
+  pull-request:
+    branches:
+      - main
+
+jobs:
+  job1:
+    - name: Echo message    
+     runs-on: ubuntu-latest
+     steps: 
+    - name: Check out repo
+    uses: actions/checkout@main
+    - name: Echo message 
+      run: |
+        echo "Will add code checks here in next challenge"
