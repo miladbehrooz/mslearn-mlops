@@ -18,9 +18,9 @@ jobs:
       uses: snok/install-poetry@v1
       with:
         virtualenvs-create: true
-        virtualenv-in-project: true
-        virtualenv-path: .venv
-        installer-paraller: true
+        virtualenvs-in-project: true
+        virtualenvs-path: .venv
+        installer-parallel: true
 
     - name: Install Dependencies
       run: |
