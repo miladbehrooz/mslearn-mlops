@@ -26,7 +26,7 @@ jobs:
       run: |
         poetry env use python
         source .venv/bin/activate
-        poetry install  --no-root --no-build-isolation
+        poetry install  --no-interaction
     - name: Run linting tests
       run: | 
         poetry run flake8 src/model/
