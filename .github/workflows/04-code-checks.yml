@@ -4,37 +4,50 @@ on:
   workflow_dispatch:
 
 jobs:
-  job1:
-    name: linting
+  linting:
+    name: Linting
     runs-on: ubuntu-latest
     steps:
-    - name: Check out repo
-      uses: actions/checkout@main
+      - name: Check out repo
+        uses: actions/checkout@v4
 
-    - name: Use Python version
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.10"
+      - name: Use Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
-    - name: Install Poetry
-      uses: snok/install-poetry@v1
-      with:
-        virtualenvs-create: true
-        virtualenvs-in-project: true
-        virtualenvs-path: .venv
-        installer-parallel: true
+      - name: Install Flake8
+        run: pip install flake8
 
-    - name: Install Dependencies
-      run: |
-        poetry env use python
-        source .venv/bin/activate
-        poetry install  --no-interaction --no-root
-  
-    - name: Run linting tests
-      run: | 
-        poetry run flake8 src/model/
-    - name: Run unit tests
-      run: |
-        poetry run pytest tests/test_train.py
+      - name: Run linting tests
+        run: flake8 src/model/
 
+  unit_tests:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    needs: linting 
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
 
+      - name: Use Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          virtualenvs-path: .venv
+          installer-parallel: true
+
+      - name: Install Dependencies
+        run: |
+          poetry env use python
+          source .venv/bin/activate
+          poetry install --no-interaction --no-root
+
+      - name: Run unit tests
+        run: poetry run pytest tests/test_train.py
